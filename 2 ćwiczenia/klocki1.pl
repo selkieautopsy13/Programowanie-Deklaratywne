@@ -29,8 +29,8 @@
 % pod klockiem Y i na klocku Z
 
 %--------------------------------------miedzy/3
+	miedzy(X,Y,Z):-na(Z,X),na(X,Y).
 	miedzy(X,Y,Z):-na(Y,X),na(X,Z).
-	miedzy(X,Y,Z):-miedzy(X,Z,Y).
 %--------------------------------------miedzy/3
 
 /*
