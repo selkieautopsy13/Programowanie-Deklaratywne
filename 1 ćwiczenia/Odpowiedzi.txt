@@ -1,0 +1,10 @@
+?- na(d,c).
+?- na(c,a).
+?- na(b,c).
+?- na(X,c).
+?- na(b,X).
+?- na(X,Y).
+?- na(_,c).
+?- na(c,_).
+?- na(X,c),na(c,Y).
+?- na(_,X),na(X,_).

@@ -1,0 +1,5 @@
+Odpowiedzi na sesjê prologow¹ klocki1:
+?- pod(d,_).
+?- pod(X,c).
+?- miedzy(c,X,Y).
+?- miedzy(c,_,_).
