@@ -34,4 +34,10 @@ SESJA PROLOGOWA:
 4. Czy Jan ma bratni¹ dusz¹?
 ?- bratnia_dusza(_,jan).
 
+5. Kto jest bratni¹ dusz¹ Justyny?
+?- bratnia_dusza(justyna,X).
+
+6. Pary bratnich dusz.
+?- bratnia_dusza(X,Y).
+
 */

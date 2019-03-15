@@ -1,0 +1,59 @@
+Czy te dwa zagadnienia da siê ze sob¹ uzgodniæ?
+f(X,a(b,c)) = f(Z,a(Z,c))
+
+T11:X (X - zmienna)
+T21:Z (Z - zmienna)
+?1: Z=X
+T1?1: f(X,a(b,c))
+T2?1: f(X,a(X,c))
+
+T12: a(b,c)
+T22: a(X,c)
+T13: b (sta³a)
+T23: X (zmienna)
+
+sigma2: X=b
+T1?1?2: f(b,a(b,c))
+
+
+T1:fu(f(X),Y,a) T2:fu(f(g(Y),c,Z))
+T11:f(X) 
+T21:f(g(Y))
+T12:X
+T22:g(Y)
+?1: X=g(Y)
+T1?1: fu(f(g(Y),Y,a)
+T2?1: fu(f(g(Y)),c,Z)
+
+T31: Y
+T32: c
+?2: Y=c
+T1?2: fu(f(g(c),c,a)
+T2?2: fu(f(g(c),c,Z)
+T41: a
+T42: Z
+?3: Z=a
+T1?3: fu(f(g(c),c,a)
+T2?3: fu(f(g(c),c,a)
+
+<-dziadek(karol,marek)
+->dziadek(karol,marek)
+klauzulaPusta - nast¹pi³a refutacja
+Ka¿dej refutacji odpowiada odpowiedŸ obliczona
+
+<-dziadek(karol,X)
+dziadek(karol,X)<-ojciec(karol,Z1),dziecko(X,z1)
+------------------------------------------------------------RL
+nowy cel:<-ojciec(karol,Z1),dziecko(X,Z1)
+
+
+% Dziadek
+/*1*/ojciec(karol,jan).
+/*2*/ojciec(karol,adam).
+/*3*/dziecko(tomasz,jan).
+/*4*/dziecko(piotr,adam).
+/*5*/dziadek(karol,marek).
+/*6*/dziadek(X,Y):-ojciec(X,Z), dziecko(Y,Z).
+
+
+
