@@ -1,4 +1,4 @@
-Czy te dwa zagadnienia da siê ze sob¹ uzgodniæ?
+Czy te dwa zagadnienia da siÄ™ ze sobÄ… uzgodniÄ‡?
 f(X,a(b,c)) = f(Z,a(Z,c))
 
 T11:X (X - zmienna)
@@ -9,12 +9,14 @@ T2?1: f(X,a(X,c))
 
 T12: a(b,c)
 T22: a(X,c)
-T13: b (sta³a)
+T13: b (staÅ‚a)
 T23: X (zmienna)
 
 sigma2: X=b
 T1?1?2: f(b,a(b,c))
 
+
+MGU=(T1,T2)=sigma1sigma2=[Z=X,X=b]
 
 T1:fu(f(X),Y,a) T2:fu(f(g(Y),c,Z))
 T11:f(X) 
@@ -38,8 +40,8 @@ T2?3: fu(f(g(c),c,a)
 
 <-dziadek(karol,marek)
 ->dziadek(karol,marek)
-klauzulaPusta - nast¹pi³a refutacja
-Ka¿dej refutacji odpowiada odpowiedŸ obliczona
+klauzulaPusta - nastÄ…piÅ‚a refutacja
+KaÅ¼dej refutacji odpowiada odpowiedÅº obliczona
 
 <-dziadek(karol,X)
 dziadek(karol,X)<-ojciec(karol,Z1),dziecko(X,z1)
